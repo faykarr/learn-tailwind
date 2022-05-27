@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply bg-primary text-white shadow-md font-semibold px-5 py-3 rounded-full my-4 inline-block
+                    hover:ring hover:ring-cyan-600 hover:bg-cyan-700 hover:shadow-lg transition duration-500;
+    }
+
+    .row {
+        @apply flex flex-wrap md:flex-nowrap;
+    }
+
+    .col {
+        @apply w-full px-4;
+    }
+
+    .socmed-icons {
+        @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 text-slate-400 transition duration-200 hover:border-primary hover:bg-primary hover:text-white;
+    }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}

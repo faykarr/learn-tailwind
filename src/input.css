@@ -4,8 +4,7 @@
 
 @layer components {
     .btn-primary {
-        @apply bg-primary text-white shadow-md font-semibold px-5 py-3 rounded-full my-4 inline-block
-                    hover:ring hover:ring-cyan-600 hover:bg-cyan-700 hover:shadow-lg transition duration-500;
+        @apply bg-primary text-white shadow-md font-semibold px-5 py-3 rounded-full my-4 inline-block hover:ring hover:ring-cyan-600 hover:bg-cyan-700 hover:shadow-lg transition duration-500;
     }
 
     .row {
@@ -19,8 +18,36 @@
     .socmed-icons {
         @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 text-slate-400 transition duration-200 hover:border-primary hover:bg-primary hover:text-white;
     }
+
+    .hamburger-line {
+        @apply w-[30px] h-[2px] my-2 block bg-dark;
+    }
+
+}
+
+@layer utilities {
+    .animate-ease-in-out {
+        @apply transition duration-300 ease-in-out;
+    }
 }
 
 body {
     font-family: 'Inter', sans-serif;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply  rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply  scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply  -rotate-45;
+}
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white bg-opacity-70 shadow-md;
+    backdrop-filter: blur(10px);
 }

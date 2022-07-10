@@ -24,17 +24,32 @@
                 </div>
                 <div class="flex items-center px-4">
                     <!-- Hamburger Section -->
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
-                        <span class="hamburger-line origin-top-left  animate-ease-in-out"></span>
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line origin-top-left animate-ease-in-out"></span>
                         <span class="hamburger-line animate-ease-in-out"></span>
                         <span class="hamburger-line origin-bottom-left animate-ease-in-out"></span>
                     </button>
 
                     <!-- Navigation Section -->
-                    <nav id="nav-menu" class="hidden absolute py-5 mt-2  bg-white bg-opacity-75 shadow-md rounded-lg max-w-[250px] w-full right-4 top-full">
-                        <ul>
-                            <li>
-                                <a href="#home">Home</a>
+                    <nav id="nav-menu"
+                        class="hidden absolute p-5 mt-2 bg-white bg-opacity-90 shadow-md rounded-lg max-w-[250px] w-full right-4 top-full lg:static lg:shadow-none lg:max-w-full lg:rounded-none lg:block lg:bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group hover:bg-primary rounded-md animate-ease-in-out flex items-center
+                                justify-between hover:text-white px-4 mx-2">
+                                <a href="#home"
+                                    class="flex justify-center text-base text-dark w-full py-2 group-hover:text-white">Home</a>
+                            </li>
+                            <li class="group hover:bg-primary text-center rounded-md animate-ease-in-out flex items-center
+                                justify-between hover:text-white px-4 mx-2">
+                                <a href="#about"
+                                    class="flex justify-center text-base text-dark w-full py-2 group-hover:text-white">
+                                    About Me</a>
+                            </li>
+                            <li class="group hover:bg-primary text-center rounded-md animate-ease-in-out flex items-center
+                                justify-between hover:text-white px-4 mx-2">
+                                <a href="#projects"
+                                    class="flex justify-center text-base text-dark w-full py-2 group-hover:text-white">
+                                    Projects</a>
                             </li>
                         </ul>
                     </nav>
@@ -45,7 +60,7 @@
     <!-- End Navbar Section -->
 
     <!-- Hero Section -->
-    <section id="home" class="pt-36 font-sans">
+    <section id="home" class="pt-[85px] md:pt-36 font-sans">
         <div class="container lg:px-32">
             <div class="row">
                 <div class="col self-center">
@@ -67,8 +82,8 @@
                         <span class="font-bold text-slate-600">Game Development,</span>
                         Web Development, and Cloud Computing.
                     </p>
-                    <a href="#contact" class="btn-primary font-mono">
-                        <i class="fa-regular fa-address-card mr-1.5"></i>Contact Me</a>
+                    <a href="./dist/files/0194_CV.pdf" target="_blank" class="btn-primary font-mono">
+                        <i class="fa-regular fa-address-card mr-1.5"></i>Download CV</a>
                 </div>
                 <div class="col self-center mt-8 md:mt-0 sm:w-1/2 sm:mx-auto md:w-full lg:w-1/2">
                     <div class="relative">

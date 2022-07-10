@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 @layer components {
     .btn-primary {
@@ -29,10 +30,14 @@
     .animate-ease-in-out {
         @apply transition duration-300 ease-in-out;
     }
+
+    .menu-mobile {
+        @apply text-base text-dark w-full py-2 group-hover:text-primary;
+    }
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -48,6 +53,5 @@ body {
 }
 
 .navbar-fixed {
-    @apply fixed z-[9999] bg-white bg-opacity-70 shadow-md;
-    backdrop-filter: blur(10px);
+    @apply fixed z-50 bg-white bg-opacity-70 shadow-md backdrop-blur-xl transition duration-700 ease-in-out;
 }

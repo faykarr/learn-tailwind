@@ -11,9 +11,7 @@ hamburger.addEventListener('click', () => {
 window.onscroll = function() {
     if (window.scrollY > 0) {
         document.querySelector('header').classList.add('navbar-fixed');
-        // document.querySelector('nav').classList.add('backdrop-menu');
     } else {
         document.querySelector('header').classList.remove('navbar-fixed');
-        // document.querySelector('nav').classList.remove('backdrop-menu');
     }
 }
